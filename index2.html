@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title> HTML và CSS </title>
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/script html.js"></script>
+        <link href="css/style html.css" rel="stylesheet">
+    </head>
+    <style>
+        body {
+            background: url("images/72234a18b250a1e7b4c076f062a5eaed.jpg") no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            }
+    </style>
+    <body>
+        <nav id="fixNav">
+            <ul class="MENU">
+                <li><a href= "demo.html">TRANG CHỦ</a></li>
+                <li><a href="index2.html">HTML VÀ CSS</a></li>
+                <li><a href="index3.html">JS và JQUERY</a></li>
+                <li><a href="quiz game.html">GAME</a></li>
+                <li><a href="#lienhe">LIÊN HỆ</a></li>
+            </ul>
+        </nav>
+
+        <header>
+            <h1> HTML và CSS </h1>
+        </header>   
+        
+        <section>
+            <h1><a > I. HTML: </a></h1> 
+            <h3><b>* Cấu trúc tài liệu HTML:</b></h3>
+            <div class="html">
+                <img src="images/Untitled.png" alt="cauTrucHTML"/>
+            </div>
+            <ul class="tab flex">
+                <li><a href="#ds" class="active">Thẻ định dạng và thẻ danh sách</a></li>
+                <li><a href="#lk">Thẻ siêu liên kết</a></li>
+                <li><a href="#ha">Thẻ hình ảnh và bảng</a></li>
+                <li><a href="#form">Các thẻ form</a></li>
+                <li><a href="#iframe">Iframe và đa phương tiện</a></li>    
+            </ul>
+
+            <div class="tab-content active">
+                <div id="ds">
+                    <h3>Các thẻ định dạng:</h3>
+                    <ul>
+                    <p class="color"><u><b>Một số thẻ định dạng chữ viết:</u></b></p>
+                    <li>
+                        <code><i>&lt;strong&gt;</i></code>: In đậm chữ viết.     
+                    </li>
+                    <li>
+                        <code><i>&lt;i&gt;</i></code>: In nghiêng chữ viết.     
+                    </li>
+                    <li>
+                        <code><i>&lt;u&gt;</i></code>: Gạch chân chữ viết.    
+                    </li>
+                    <li>
+                        <code><i>&lt;strike&gt;</i></code>: Gạch ngang chữ viết.     
+                    </li>
+                    <li>
+                        <code><i>&lt;em&gt;</i></code>: Nhấn mạnh câu.     
+                    </li>
+                    <li>
+                        <code><i>&lt;code&gt;</i></code>: Định dạng đoạn mã của chương trình.
+                    </li>
+                    <li>
+                        <code><i>&lt;hr&gt;</i></code>: Thước kẻ nang trên tài liệu.
+                    </li>
+                    <li>
+                        <code><i>&lt;mark&gt;</i></code>: Tô sáng chữ viết.
+                    </li>
+                    
+                    </ul>
+
+                    <ul>
+                        <p class="color"><u><b>Thẻ trích dẫn:</u></b></p>
+                        <li>
+                            <code><i>&lt;quote&gt;</i></code>: Định dạng như một câu trích dẫn và có thể định dạng thêm tên người trích dẫn.
+                        </li>
+                        <li>
+                            <code><i>&lt;cite&gt;</i></code>: Trích dẫn tên tác giả.
+                        </li>    
+                    </ul>
+
+                    <ul>
+                        <p class="color"><u><b>Thẻ định dạng sẵn:</u></b></p>
+                        <small><b>Được gọi là thẻ định dạng sẵn vì mặc định trình duyệt đã tự động định dạng cho các nội dung nằm bên trong thẻ đó như kích thước chữ, khoảng cách, kiểu chữ.</b></small>
+                        <li>
+                            <code><i>&lt;pre&gt;</i></code>: đăng một câu đối thoại hoặc in một đoạn mã để cho dễ phân biệt với các văn bản thông thường.    
+                        </li>
+        
+                    </ul>
+                    <ul>
+                        <p class="color"><u><b>Các thuộc tính dùng để định dạng:</u></b></p>
+                        <small><b>Các thuộc tính này thường ở trong các thẻ như <code>&lt;div&gt;</code> và <code>&lt;span&gt;</code> bởi vì các thuộc tính này là các thuộc tính của CSS.</b></small> 
+                        <li>
+                            <code><i>&lt;style&gt;</i></code>: Để định dạng chữ viết.
+                        </li>
+                        <li>
+                            <code><i>&lt;color&gt;</i></code>: Chỉnh màu chữ.
+                        </li>
+                        <li>
+                            <code><i>&lt;background-color&gt;</i></code>: Chỉnh màu nền.
+                        </li>
+                        <li>
+                            <code><i>&lt;font-size&gt;</i></code>: Chỉnh kích thước chữ.
+                        </li>
+                        <li>
+                            <code><i>&lt;font-family&gt;</i></code>: Chỉnh font chữ. 
+                        </li>
+                        <li>
+                            <code><i>&lt;text-align&gt;</i></code>: Căn lề văn bản.
+                        </li>    
+                    </ul>
+
+                    <h3>Các thẻ danh sách:</h3>
+                    <ul>
+                        <li><code><i>&lt;ul&gt;&lt;/ul&gt;</i></code>: Danh sách không thứ tự.</li>
+                        <li><code><i>&lt;ol&gt;&lt;/ol&gt;</i></code>: Danh sách có thứ tự.</li>
+                        <li><code><i>&lt;dl&gt;&lt;/dl&gt;</i></code>: Danh sách mô tả.</li>
+                    </ul>
+                </div>
+                <div id="lk">
+                    <h3>Thẻ siêu liên kết :</h3>
+                    <ul>
+                        <p class="color"><u><b>Cú pháp của một siêu liên kết:</u></b></p>
+                        <li>Cặp thẻ<code><i>&lt;a&gt;&lt;/a&gt;</i></code>.</li>
+                        <li>Nơi liên kết đến (thuộc tính <small><b>href</b></small>).</li>
+                        <li>Thành phần hiển thị cho liên kết.</li>
+
+                        <p class="color"><u><b>Thuộc tính target:</u></b></p>
+                        <li><i>_blank</i>: Mở liên kết trong một cửa sổ hoặc tab mới.</li>
+                        <li><i>_self</i>: Mở liên kết trong cùng frame (mặc định).</li>
+                        <li><i>_parent</i>:  Mở liên kết trong frame cha.</li>
+                        <li><i>_top</i>: Mở liên kết trong toàn cửa sổ.</li>
+                        <li><code><i>&lt;framename&gt;</i></code>: Mở liên kết trong một frame chỉ định.</li>
+
+                        <p class="color"><u><b>Các loại liên kết:</u></b></p>
+                        <li>Liên kết ngoại (external): Truyền URL của trang cần đến vào href (URL có thể tương đối hoặc tuyệt đối).</li>
+                        <li>Liên kết nội (internal): Truyền vị trí cần đến vào href (trong đó &lt;vị trí&gt; là giá trị thuộc tính id của một thẻ nào đó).</li>
+                        <li>Tạo liên kết đến vị trí được chỉ định trong một trang web khác ( trong đó cách xác định &lt;vị trí&gt; tương tự như tạo liên kết trong). </li>
+
+                        <p class="color"><u><b>Các thuộc tính thiết lập màu của thẻ &lt;body&gt;:</u></b></p>
+                        <li><code><i>&lt;link&gt;</i></code></li>
+                        <li><code><i>&lt;alink&gt;</i></code> (active link)</li>
+                        <li><code><i>&lt;vlink&gt;</i></code> (visited link)</li>
+
+                        <p class="color"><u><b>Liên kết gửi mail::</u></b></p>
+                        <li>Cấu trúc liên kết: "<i>mailto:&lt;địa-chỉ-email&gt;?subject=&body=</i> ".</li>
+                        <li>Máy phải cài mail client để thực thi lệnh này.</li>
+                    </ul>
+                </div>
+                <div id="ha">
+                    <h3>Thẻ hình ảnh :</h3>
+                    <ul>
+                        <li>Sử dụng thẻ <i>&lt;img&gt;</i> để định nghĩa một ảnh.</li>
+                        <li>Sử dụng thuộc tính src xác định URL  ( địa chỉ web) của ảnh.</li>
+                        <li>Sử dụng thuộc tính alt để xác định văn bản thay thế cho ảnh, nếu ảnh không hiển thị.</li>
+                        <li>Sử dụng thuộc tính width và height để xác định kích thước của ảnh.</li>
+                        <li>Sử dụng CSS width và height để xác định kích thước ảnh (cách khác).</li>
+                        <li>Sử dụng CSS float để đặt ảnh nổi.</li>
+                        <li>Sử dụng thẻ <i>&lt;map&gt;</i> để định nghĩa một bản đồ ảnh.</li>
+                        <li>Sử dụng thẻ <i>&lt;area&gt;</i> để định nghĩa một vùng kích được  trong bản đồ ảnh.</li>
+                        <li>Sử dụng thẻ <i>&lt;img&gt;</i> với thuộc tính usemap để chỉ tới một bản đồ ảnh.</li>
+                    </ul>
+
+                    <h3>Thẻ bảng :</h3>
+                    <ul>
+                        <p class="color"><u><b>Một số thẻ bảng trong HTML:</u></b></p>
+                        <li><code><i>&lt;table&gt;</i></code>: Xác định một bảng.</li>
+                        <li><code><i>&lt;th&gt;</i></code>: Xác định tiêu đề cho các ô trong bảng.</li>
+                        <li><code><i>&lt;tr&gt;</i></code>: Xác định hàng trong bảng.</li>
+                        <li><code><i>&lt;td&gt;</i></code>: Xác định cột trong bảng.</li>
+                        <li><code><i>&lt;caption&gt;</i></code>: Xác định chú thích cho bảng.</li>
+                        <li><code><i>&lt;colgroup&gt;</i></code>: Xác định nhóm của một hoặc nhiều cột trong một bảng để định dạng.</li>
+                        <li><code><i>&lt;col&gt;</i></code>: Xác định thuộc tính column cho mỗi cột bằng phần tử <i>&lt;colgroup&gt;</i>.</li>
+                        <li><code><i>&lt;thead&gt;</i></code>: Nhóm nội dung các header trong một bảng.</li>
+                        <li><code><i>&lt;tbody&gt;</i></code>: Nhóm nội dung các body trong một bảng.</li>
+                        <li><code><i>&lt;tfoot&gt;</i></code>: Nhóm  nội dung các footer trong một bảng.</li>
+
+                        <p class="color"><u><b>Công dụng của các thẻ và thuộc tính:</u></b></p>  
+                        <li>Trong HTML sử dụng thẻ <i>&lt;table&gt;</i> để tạo một bảng.</li>
+                        <li>Trong HTML sử dụng thẻ <i>&lt;tr&gt;</i> để tạo một hàng của một bảng.</li>
+                        <li>Trong HTML sử dụng thẻ <i>&lt;td&gt;</i> để tạo dữ liệu cho một bảng.</li>
+                        <li>Trong HTML sử dụng thẻ <i>&lt;th&gt;</i> để tạo tiêu đề cho bảng.</li>
+                        <li>Trong HTML sử dụng thẻ <i>&lt;caption&gt;</i> để tạo chú thích cho bảng.</li>
+                        <li>Trong CSS sử dụng thuộc tính border để tạo đường viền.</li>
+                        <li>Trong CSS sử dụng thuộc tính border-collapse để thu nhỏ đường viền của các ô.</li>
+                        <li>Trong CSS sử dụng thuộc tính padding để thêm khoảng trống trong các ô.</li>
+                        <li>Trong CSS sử dụng thuộc tính text-align để căn lề văn bản.</li>
+                        <li>Trong CSS sử dụng thuộc tính border-spacing để thiết lập khoảng trắng giữa các ô.</li>
+                        <li>Sử dụng thuộc tính colspan để chia một ô thành nhiều cột.</li>
+                        <li>Sử dụng thuộc tính rowspan để chia một ô thành nhiều hàng.</li>
+                        <li>Sử dụng thuộc tính id để xác định duy nhất một bảng.</li>
+                    </ul>
+                </div>
+
+                <div id="form">
+                    <ul>
+                        <p class="color"><u><b>Các thuộc tính của form:</u></b></p>
+                        <li><u><i>Accept-charset</i></u>:	Chỉ định bảng mã được sử dụng trong form gửi (mặc định: theo bảng mã của trang).</li>
+                        <li><u><i>Action</i></u>:	Chỉ định một địa chỉ (url) sẽ gửi dữ liệu trên form tới (mặc định: trang gửi).</li>
+                        <li><u><i>Autocomplete</i></u>:	Chỉ định cho trình duyệt tự lấy dữ liệu tự động từ dữ liệu người sử dụng đã nhập trước đâu (mặc định: on), ví dụ bạn gõ chữ vào ô nhập, nó sẽ hiện ra các gợi ý các từ bạn đã gõ vào đó.</li>
+                        <li><u><i>Enctype</i></u>:	Chỉ định mã hoá dữ liệu gửi đi (Mặc định: url-encoded).</li>
+                        <li><u><i>Method</i></u>:	Chỉ định phương thức HTTP được sử dụng khi gửi form (mặc định: GET).</li>
+                        <li><u><i>Name</i></u>:	Chỉ định một tên được sử dụng để nhận diện các thành phần trên form (với DOM sử dụng: document.forms.name).</li>
+                        <li><u><i>Novalidate</i></u>:	Chỉ định trình duyệt sẽ không hợp lệ cho form.</li>
+                        <li><u><i>Target</i></u>:	Chỉ định đích của một địa chỉ trong thuộc tính action (mặc định: _self).</li>
+                    </ul>
+                </div>
+                <div id="iframe">
+                    <h3>Iframe trong HTML: :</h3>
+                    <ul>
+                        <p class="color"><u><b>Iframe và cấu trúc iframe:</u></b></p>
+                        <li><i>&lt;iframe&gt;</i> : Dùng để định nghĩamột inline frame.</li>
+                        <li>Cú pháp: &lt;iframe src=“URL“&gt;&lt;/iframe&gt; (trong đó thuộc tính <i>src</i> đăc tả URL của trang iframe).</li>
+
+                        <p class="color"><u><b>Height và width của iframe:</u></b></p>
+                        <li>Các giá trị thuộc tính được xác định tại điểm ảnh (pixel) theo mặc định, nhưng  chúng cũng có thể được tính theo phần trăm (như “80%”).</li>
+                        <li>VD: <i>&lt;iframe src=“demo_iframe.htm” width=“200” height=“200”&gt;&lt;/iframe&gt;</i></li>
+
+                        <p class="color"><u><b>Bỏ đường viền trong iframe:</u></b></p>
+                        <li>Để loại bỏ đường viền đó, ta thêm thuộc tính <i>style</i> và sử dụng thuộc tính <i>border</i> trong CSS: </li>
+                        <li>VD: <i>&lt;iframe src=“demo_iframe.htm” style=“border:none”&gt;&lt;/iframe&gt;</i></li>
+
+                        <p class="color"><u><b>Iframe như một target:</u></b></p>
+                        <li>Một iframe có thể sử dụng như một đích tới cho một link.</li>
+                        <li>Thuộc tính <i>target</i> của một <i>link</i> phải tham chiếu tới thuộc tính <i>name</i> của một iframe.</li>
+                        <li>VD: &lt;iframe src=“demo_iframe.htm” name=“iframe_a”&gt;&lt;/iframe&gt; <br>
+                            VD: &lt;p&gt;&lt;a href=“http://timoday.edu.vn/” target=“iframe_a”&gt;timoday.edu.vn&lt;/a&gt;&lt;/p&gt;</li>
+                    </ul>
+                        <h3>Đa phương tiện trong HTML :</h3>
+                    <ul>
+                        <p class="color"><u><b>Các định dạng đa phương tiện: </u></b></p>
+                        <li>Các phần tử Multimedia (như audio hoặc video) là phần tử lưu trữ các tệp tin đa phương tiện.</li>
+                        <li>Cách phổ biến nhất để nhận ra định dạng của một tệp tin là xem phần mở rộng (thường từ 2-4 ký tự đằng sau dấu chấm) của tệp tin đó.</li>
+                        <li>Các tệp tin multimedia có những phần mở rộng khác nhau như: .swf, .wav, .mp3, .mp4, .mpg, .wmv và .avi.</li>
+
+                        <p class="color"><u><b>Các định dạng video phổ biến: </u></b></p>
+                        <li><u><i>.mpg</i> và <i> .mpeg</i></u> (MPEG): MPEG được phát triển bởi Moving Pictures Expert Group. Đây là định dạng video phổ biến đầu tiên trên trang web. MPEG được tất cả các trình duyệt hỗ trợ nhưng lại không được hỗ trợ trong HTML5.</li>
+                        <li><u></u><i>.avi</i> (AVI): AVI (Audio Video Interleave) được phát triển bởi Microsoft. Được sử dụng phổ biến trong camera và TV. Tuy nhiên định dạng này có thể chạy trên máy tính nhưng không chạy được trên website.</li>
+                        <li><u><i>.wmv</i></u> (WMV): WMV (Windows Media Video) được phát triển bởi Microsoft. Được sử dụng phổ biến trong camera và TV. Tuy nhiên định dạng này có thể chạy trên máy tính nhưng không chạy được trên website.</li>
+                        <li><u><i>.mov</i></u> (QuickTime): QuickTime được phát triển bởi Apple. Được sử dụng phổ biến trong camera và TV. Định dạng này có thể chạy trên máy tính nhưng không chạy được trên website. </li>
+                        <li><u><i>.rm</i></u> và <i>.ram</i> (RealVideo): RealVideo được phát triển bởi Real Media cho phép truyền tải video với băng thông thấp. Ngày nay, định dạng RealVideo vẫn được sử dụng trong video trực tuyến và Internet TV nhưng không chạy được trên trình duyệt.</li>
+                        <li><u><i>.swf</i></u> và <i>.flv</i> (Flash): Flash được phát triển bởi Macromedia. Thường cần phải cài thêm các thành phần mở rộng (plug-in) mới có thể chạy được trên các trình duyệt web.</li>
+                        <li><u><i>.ogg</i></u> (Ogg): Theora Ogg được phát triển bởi Xiph.Org Foundation. Được hỗ trợ bởi HTML5.</li>
+                        <li><u><i>.webm</i></u> (WebM): WebM được phát triển bởi giants, Mozilla, Opera, Adobe, and Google. Được hỗ trợ bởi HTML5.</li>
+                        <li><u><i>.mp4</i></u> (MPEG-4 hoặc MP4): MP4. Được phát triển bởi  Moving Pictures Expert Group. Dựa trên QuickTime. Định dạng được sử dụng phổ biến trong camera và TV. Được tất cả các trình duyệt hỗ trợ và được YouTube khuyến khích sử dụng.</li>
+                        <small><b>Duy nhất chỉ định dạng MP4, WebM, và Ogg video được hỗ trợ trong tiêu chuẩn mới của HTML5.</b></small>
+
+                        <p class="color"><u><b>Các định dạng âm thanh: </u></b></p>
+                        <li><u><i>.mid</i></u> và <i>.midi</i> (MIDI): MIDI (Musical Instrument Digital Interface) là định dạng chính cho tất cả các thiết bị âm nhạc như bộ tổng hợp và các card âm thanh máy tính. Định dạng MIDI không chứa âm thanh. Nó có thể chạy tốt trên các thiết bị điện tử, máy tính nhưng không phải trong các trình duyệt web.</li>
+                        <li><u><i>.rm</i></u> và <i>.ram</i> (RealAudio): RealAudio được phát triển bởi Real Media cho phép phát audio với băng thông thấp. Định dạng không chạy được trên các trình duyệt web.</li>
+                        <li><u><i>.wma</i></u> (WMA): WMA (Windows Media Audio) được phát triển bởi Microsoft. Định dạng có thể chạy trên máy tính nhưng không chạy được trên trình duyệt web.</li>
+                        <li><u><i>.aac	</i></u> (AAC): AAC (Advanced Audio Coding) được phát triển bởi Apple để làm định dạng mặc định cho iTunes. Định dạng có thể chạy trên máy tính nhưng không chạy được trên trình duyệt web.</li>
+                        <li><u><i>.wav	</i></u> (WAV): WAV được phát triển bởi IBM and Microsoft. Chạy được trên các máy cài hệ điều hành Windows, Macintosh và Linux. Định dạng được hỗ trợ trong HTML5.</li>
+                        <li><u><i>.ogg</i></u> (OGG): Ogg được phát triển bởi tổ chức Xiph.Org. Định dạng được hỗ trợ trong HTML5.</li>
+                        <li><u><i>.mp3</i></u> (MP3): MP3 là phần âm thanh của tệp tin MPEG.  MP3 là định dạng dành cho âm nhạc phổ biến nhất thế giới, có thể nén nhạc với dung lượng thấp mà vẫn cho chất lượng tốt. MP3 được tất cả các trình duyệt hỗ trợ.</li>
+                        <li><u><i>.mp4</i></u> (MP4): MP4 là định dạng cho video nhưng cũng có thể sử dụng cho audio. MP4 được tất cả các trình duyệt hỗ trợ.</li>
+                    </ul> 
+                    
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h1><a> II. CSS: </a> </h1>
+            <ul class="tab flex">
+                <li><a href="#cp" class="active">Cú pháp CSS và cách chèn CSS vào tài liệu HTML</a></li>
+                <li><a href="#sel">Xác định selector</a></li>
+                <li><a href="#sd">Sử dụng CSS thông dụng</a></li> 
+            </ul>
+
+            <div class="tab-content active">
+                <div id="cp">
+                    <ul>
+                        <p class="color"><u><b>Cú pháp cơ bản: </u></b></p>
+                        <li>Tập tin CSS có phần mở rộng là <i>.css</i></li>
+                        <li>Cú pháp để thiết lập CSS cho một thành phần HTML bao gồm 2 phần: <b>Selector</b> và <b>Declaration</b></li>
+                        <li>Có thể có nhiều Declaration thiết lập cho các Selector, cách nhau bằng dấu chấm phẩy.</li>
+                        <li>Có thể khai báo nhiều Selector cùng lúc cách nhau bằng dấu chấm phẩy.</li>
+
+                        <p class="color"><u><b>Ghi chú trong CSS: </u></b></p>
+                        <li>Ghi chú sẽ được trình duyệt bỏ qua.</li>
+                        <li>Để ghi chú ta sử dụng cặp ký hiệu: /* và */ .</li>
+
+                        <p class="color"><u><b>Chèn CSS vào tài liệu HTML: </u></b></p>
+                        <u>Có 3 cách để chèn CSS vào các thành phần trong tài liệu HTML:</u></b>
+                        <li>Dùng thuộc tính <b>style</b> trên từng thành phần.</li>
+                        <li>Dùng thành phần <b>&lt; style &gt; </b>bên trong <b> &lt; head &gt; </b> của tài liệu HTML.</li>
+                        <li>Nạp tập tin <b>*.css</b> từ bên ngoài vào tài liệu HTML dùng thẻ <b> &lt; link &gt;</b> bên trong <b>&lt; head &gt;</b> (external).</li>
+
+                        <p class="color"><u><b>Thứ tự ưu tiên trong CSS: </u></b></p>
+                        <li>Tăng dần theo trật tự: external &lt; internal &lt; inline &lt; CSS mặc định. </li>
+                        <li>Muốn thay đổi đọ ưu tiên ta dùng thuộc tính <b>!important</b> sau phần giá trị của một thuộc tính.</li>
+                    </ul>
+                </div>
+
+                <div id="sel">
+                    <p class="color"><u><b>Các yếu tố để xác định selector: </u></b></p>
+                    <li>Sử dụng <b>tên</b> thành phần.</li>
+                    <li>Sử dụng <b>thuộc tính id</b> của các thành phần.</li>
+                    <li>Sử dụng <b>thuộc tính class</b> của các thành phần.</li>
+                    <li>Sử dụng <b>bất kỳ thuộc tính</b> nào khác của các thành phần.</li>
+                </div>
+
+                <div id="sd">
+                    <p class="color"><u><b>Các thuộc tính CSS thông dụng: </u></b></p>
+                    <li><u><i>CSS background</i></u>: background-color, background-image, background-repeat, background-position, background-attachment, background.</li>
+                    <li><u><i>CSS font</i></u>: font-family, font-style, font-variant, small-cap, font-weight, font-size, font.</li>
+                    <li><u><i>CSS text</i></u>: color, direction, text-align, text-transform, text-decoration, letter-spacing, word-spacing, line-height, text-indent, white-space, text-shadow.</li>
+                    <li><u><i>CSS padding</i></u>: padding-top, padding-bottom, padding-right, padding-left, padding.</li>
+                    <li><u><i>CSS border</i></u>: border-style, border-style, border-width, border-radius, border. </li>
+                    <li><u><i>CSS margin </i></u>: margin-top, margin-bottom, margin-right, margin-left, margin.</li>
+                    <li><u><i>CSS list:</i></u>: List-style-type, list-style-position, list-style-image, list-style, marker-offset.</li>
+                    <li><u><i>CSS table</i></u>: border-collapse, width/height, text-align, vertical-align.</li>
+                    <li><u><i>CSS link</i></u>: :link, :visited, :hover, :active.</li>
+                    <li><u><i>CSS dimention</i></u>: height, width, line-height, max-height/min-height, max-width/min-width.</li>
+                    <li><u><i>CSS overflow và float</i></u>: visible, hidden, scroll, auto.</li>
+                    <li><u><i>CSS position</i></u>: static, relative, absolute, fixed.</li>
+                    <li><u><i>CSS layout</i></u>: display block hoặc inline(có thể chuyển đổi), inline-block, flex, box-sizing.</li>
+                    <li><u><i>CSS gradient</i></u>: linear-gradient, radial-gradient.</li>
+                    <li><u><i>CSS transform </i></u>: translate, rotate, scale, skew.</li>
+                    <li><u><i>CSS transition </i></u>: transition-property, transition-duration, transition-delay, transition-timing-function, transition. </li>
+                    <li><u><i>CSS animation</i></u>: animation-name, animation-duration, animation-delay, animation-iteration-coun t, animation.</li>
+                </div>
+        </section>
+
+        <footer>
+            <section id="lienhe">
+            <h1>LIÊN HỆ</h1>
+            <hr width= "5%"> 
+            <p>Liên hệ chúng tôi:</p>
+            <div class="contact">
+                <div class= "col15">
+                    <h3>Về bài học:</h3>
+                    <ul>
+                        <a href="#"><li>Các bài học khác</li></a>
+                        <a href="#"><li>Câu hỏi thường gặp</li></a>
+                        <a href="#"><li>Trợ giúp</li></a>
+                    </ul>
+                </div>
+                <div class="col35" >
+                    <h3> Thông tin liên lạc: </h3>
+                    <ul>
+                        <li> <span style="color: black ">Địa chỉ:</span> 371 Nguyễn Kiệm, Phường 3, Gò Vấp </li>
+                        <li> <span style="color: black ">Giờ làm việc:</span> từ thứ 2 đến thứ 6 </li>
+                        <li> <span style="color: black "> Phone:</span> 0265421651 </li>
+                    </ul>
+                </div>
+                <div class="col50">
+                    <h3> Tin nhắn thông qua email: </h3>
+                    <form>
+                        <table class="msg">
+                            <tr>
+                                <td>
+                                    <input type="text" placeholder="Your name" />
+                                </td>
+                                <td>
+                                    <input type="text" placeholder="Your email" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <textarea placeholder="Your messages"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <input type="submit" value="Send" />
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </section>            
+        </footer>
+
+        <div class='lentop'>
+            <div>
+            <img src="images/Arrow-Up-512.png" />
+            </div>
+        </div>
+    </body>
+    <iframe src="https://www.nhaccuatui.com/mh/background/2vsrQd19Hovd" width="1" height="1" frameborder="0" allowfullscreen allow="autoplay"></iframe>
+</html>
