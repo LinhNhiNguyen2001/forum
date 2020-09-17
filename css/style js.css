@@ -27,7 +27,7 @@ nav {
 }
 
 ul.MENU > li {
-    min-width: 375px;
+    min-width: 300px;
     border-radius:10px ;
     text-align: center;
 }
@@ -62,7 +62,7 @@ nav ul > li > a:hover {
 }
 
 .subcontent > li > a {
-    width: 350px;
+    width: 300px;
 }
 
 .submenu:hover .subcontent{
@@ -132,8 +132,6 @@ div.imgs > img {
     /*Display ra submenu*/
     display: block;
   }
-
-/* css foote
 
 /*body*/
 body{

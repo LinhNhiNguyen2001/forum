@@ -27,7 +27,7 @@ nav {
 }
 
 ul.MENU > li {
-    min-width: 375px;
+    min-width: 300px;
     border-radius:10px ;
     text-align: center;
 }
@@ -53,7 +53,6 @@ nav ul > li > a:hover {
     list-style-type: none;
 }
 
-/* submenu */
 .subcontent {
     display: none;
     position: absolute;
@@ -62,7 +61,7 @@ nav ul > li > a:hover {
 }
 
 .subcontent > li > a {
-    width: 350px;
+    width: 300px;
 }
 
 .submenu:hover .subcontent{

@@ -11,15 +11,18 @@
         body {
             background: url("images/72234a18b250a1e7b4c076f062a5eaed.jpg") no-repeat center center fixed;
             -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
             }
     </style>
     <body>
         <nav id="fixNav">
             <ul class='MENU'>
                 <li><a href= "demo.html">TRANG CHỦ</a></li>
-                <li><a href="index3.html">JS và JQUERY</a></li>
+                <li class="submenu"><a href="index3.html">JS và JQUERY</a>
+                <ul class="subcontent">
+                    <li><a href="#js">  JS </a></li>
+                    <li><a href="#jquery">  JQUERY</a></li>
+                </ul>
+                </li>
                 <li><a href="index2.html">HTML và CSS</a></li>
                 <li><a href="quiz game.html">GAME</a></li>
                 <li><a href="#lienhe">LIÊN HỆ</a></li>
@@ -30,7 +33,7 @@
             <h1> JS và JQUERY </h1>
         </header>
 
-        <section>
+        <section id="js">
             <h1><a > I. JAVASCRIPT: </a></h1> 
             <ul class="tab flex">
                 <li><a href="#ct" class="active">Cấu trúc điều khiển và xử lý sự kiện</a></li>
@@ -116,7 +119,7 @@
                 </div>
         </section>
 
-        <section>
+        <section id="jquery">
             <h1><a > I. JQUERY: </a></h1> 
             <ul class="tab flex">
                 <li><a href="#gt" class="active">Sơ lược về Jquery</a></li>
