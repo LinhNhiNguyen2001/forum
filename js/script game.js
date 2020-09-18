@@ -1,41 +1,42 @@
-const startButton = document.getElementById('start-btn')
-const nextButton = document.getElementById('next-btn')
-const questionContainerElement = document.getElementById('question-container')
-const questionElement = document.getElementById('question')
-const answerButtonsElement = document.getElementById('answer-buttons')
+const startButton = document.getElementById('start-btn')//bắt sự kiện bắt đầu game
+const nextButton = document.getElementById('next-btn')//bắt sự kiện chuyển câu
+const questionContainerElement = document.getElementById('question-container')//sự kiện hiển thị câu hỏi
+const questionElement = document.getElementById('question')//sự kiện lấy câu hỏi
+const answerButtonsElement = document.getElementById('answer-buttons')//sự kiện lấy đáp án từ nút
 
-let shuffledQuestions, currentQuestionIndex
+let shuffledQuestions, currentQuestionIndex //chạy sự kiện trộn và lấy câu hỏi hiện tại
 
-startButton.addEventListener('click', startGame)
+startButton.addEventListener('click', startGame)//chạy sự kiện khi bắt sự kiện click để bắt đầu game
 nextButton.addEventListener('click', () => {
   currentQuestionIndex++
   setNextQuestion()
 })
 
-function startGame() {
-  startButton.classList.add('hide')
-  shuffledQuestions = questions.sort(() => Math.random() - .5)
+ //hàm chạy game
+function startGame() { 
+  startButton.classList.add('hide')//ẩn câu hỏi khi vừa vào game
+  shuffledQuestions = questions.sort(() => Math.random() - .5)//trộn và hiển thị câu hỏi ngẫu nhiên
   currentQuestionIndex = 0
-  questionContainerElement.classList.remove('hide')
+  questionContainerElement.classList.remove('hide')//hiện câu hỏi 
   setNextQuestion()
 }
 
 function setNextQuestion() {
-  resetState()
+  resetState()//trả lại trạng thái ban đầu
   showQuestion(shuffledQuestions[currentQuestionIndex])
 }
 
-function showQuestion(question) {
-  questionElement.innerText = question.question
-  question.answers.forEach(answer => {
-    const button = document.createElement('button')
-    button.innerText = answer.text
+function showQuestion(question) {//hàm hiện câu hỏi
+  questionElement.innerText = question.question//lấy đoạn nội dung sao cho giống nhất
+  question.answers.forEach(answer => {//hiệu chỉnh cho mỗi câu trả lời
+    const button = document.createElement('button')//tạo nút bấm
+    button.innerText = answer.text//hiện nd bên trong nút
     button.classList.add('btn')
     if (answer.correct) {
       button.dataset.correct = answer.correct
     }
-    button.addEventListener('click', selectAnswer)
-    answerButtonsElement.appendChild(button)
+    button.addEventListener('click', selectAnswer)//bắt sự kiện click trên nút
+    answerButtonsElement.appendChild(button)//chèn một nút vào phía cuối cùng của phần tử
   })
 }
 
@@ -175,3 +176,7 @@ const questions = [
     ]
   },
 ]
+
+//getElementById() -> lấy phần tử theo tên id
+//getElementsByName() -> lấy phần tử theo tên, chính là thuộc tính name trong thẻ
+//getElementsByTagName() -> lấy phần tử theo tên thẻ HTML
